@@ -1,38 +1,37 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
-    <title>Merge Cell Table</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Test Table With Merged Cells</title>
   </head>
   <body>
-    <h1>A Table with Merged Cell</h1>
-    <br />
     <table>
-      <tr>
-        <th></th>
-        <th>Intel</th>
-        <th></th>
-        <th>AMD</th>
-      </tr>
-
-      <tr>
-        <th></th>
-        <th>CPU</th>
-        <th>GPU</th>
-      </tr>
-
-      <tr>
-        <th>Ram</th>
-        <td>65%</td>
-        <td>25%</td>
-        <td>10%</td>
-      </tr>
-
-      <tr>
-        <th>Nvme</th>
-        <td>3.60</td>
-        <td>7.3</td>
-        <td>47</td>
-      </tr>
+      <thead>
+        <tr>
+          <th rowspan="2"></th>
+          <th colspan="2">Android</th>
+          <th rowspan="2">IOS</th>
+        </tr>
+        <tr>
+          <th>CPU</th>
+          <th>GPU</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Ram</th>
+          <td>65%</td>
+          <td>5%</td>
+          <td>35%</td>
+        </tr>
+        <tr>
+          <th>Nvme</th>
+          <td>1.78</td>
+          <td>0.9</td>
+          <td>4.8</td>
+        </tr>
+      </tbody>
     </table>
   </body>
 </html>
